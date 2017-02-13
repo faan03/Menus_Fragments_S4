@@ -60,12 +60,15 @@ public class MainActivity extends AppCompatActivity {
     private  ArrayList <Fragment> agregarFragments(){
         ArrayList <Fragment> fragments = new ArrayList<>();
         fragments.add( new RecyclerViewFragment());
+
         fragments.add( new PerfilFragment());
         return fragments;
     }
     private void setUpViewPager(){
         viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(),agregarFragments()));
         tabLayout.setupWithViewPager(viewPager);
+        tabLayout.getTabAt(0).setText("Mascotas");
+        tabLayout.getTabAt(1).setText("Mi Mascota Favorita");
     }
 
 
