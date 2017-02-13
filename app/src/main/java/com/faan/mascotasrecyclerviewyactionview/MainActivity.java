@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setText("Mascotas");
         tabLayout.getTabAt(1).setText("Mi Mascota Favorita");
+        tabLayout.getTabAt(0).setIcon(R.mipmap.ic_home);
+        tabLayout.getTabAt(1).setIcon(R.mipmap.ic_pet);
     }
 
 
