@@ -52,7 +52,7 @@ public class PerfilFragment extends Fragment {
 
 
     public void inicializarAdaptador() {
-        MascotaAdaptador adaptador = new MascotaAdaptador(mascotas,getActivity());
+        MascotaAdaptadorPerfil adaptador = new MascotaAdaptadorPerfil(mascotas,getActivity());
         listaPerfil.setAdapter(adaptador);
     }
 

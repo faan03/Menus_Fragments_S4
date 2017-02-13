@@ -28,11 +28,10 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         setUpViewPager();
-        
+
         if (toolbar!= null){
             setSupportActionBar(toolbar);
         }
-
 
     } // fin oncreate
 
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(this,activityContacto.class);
                 startActivity(i);
                 break;
-
             case R.id.mAcercaDe:
                 Intent i1 = new Intent(this, AcercaDeActivity.class);
                 startActivity(i1);
