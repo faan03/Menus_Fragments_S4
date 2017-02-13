@@ -28,12 +28,10 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         setUpViewPager();
-
-
+        
         if (toolbar!= null){
             setSupportActionBar(toolbar);
         }
-
 
 
     } // fin oncreate
