@@ -64,6 +64,5 @@ public class PerfilFragment extends Fragment {
         mascotas.add(new Mascota("Micho IV",7, R.drawable.micho));
         mascotas.add(new Mascota("Micho V",6, R.drawable.micho));
 
-
     }
 }
