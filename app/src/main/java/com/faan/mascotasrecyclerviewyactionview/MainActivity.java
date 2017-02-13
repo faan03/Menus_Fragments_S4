@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -27,6 +29,29 @@ public class MainActivity extends AppCompatActivity {
         listaMascotas.setLayoutManager(llm);
         inicializarListaMascotas();
         inicializarAdaptador();
+    } // fin oncreate
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.mContacto:
+                Intent i = new Intent(this,activityContacto.class);
+                startActivity(i);
+                break;
+
+            case R.id.mAcercaDe:
+                Intent i1 = new Intent(this, AcercaDeActivity.class);
+                startActivity(i1);
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     public void inicializarAdaptador(){
